@@ -3,7 +3,7 @@ function leanLogger(options){
 	if(!options)
 		options = {};
 
-	this.debug = true;
+	this.debug = false;
 
 	return this;
 }
@@ -43,12 +43,25 @@ leanLogger.prototype.log = function log(req, res, next){
 
 		if(self.debug)
 			stream.wrtie(reqParams);
-		
+
 		// prints the log message
 		stream.write(message);
 	});
 
 	next();
 }
+
+leanLogger.prototype.getUrl = function getUrl(req){
+	return req.originalUrl || req.url;
+}
+
+leanLogger.prototype.getMethod = function getMethod(req){
+	return req.method;
+}
+
+leanLogger.prototype.getIps = function getIps(req){
+	return req.ips || req.ip;
+}
+
 
 module.exports = leanLogger;
