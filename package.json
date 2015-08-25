@@ -1,0 +1,25 @@
+{
+  "name": "leanlogger",
+  "version": "0.1.0",
+  "description": "The simplest logger you need to see how request are handled in your application. It uses the minimum code required to do the most basic and most essential logging you need for an application.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/deepaknverma/leanlogger.git"
+  },
+  "keywords": [
+    "node",
+    "logging",
+    "logging",
+    "request"
+  ],
+  "author": "Deepak Verma <deepak.verma@hometrack.com> (http://deepakverma.com.au)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deepaknverma/leanlogger/issues"
+  },
+  "homepage": "https://github.com/deepaknverma/leanlogger#readme"
+}
